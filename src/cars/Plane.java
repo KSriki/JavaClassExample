@@ -15,10 +15,10 @@ public class Plane extends Vehicle{
 	 */
 	public void fly(){
 		if(this.inMotion){
-			System.out.printf("%s is taking off!", this.name);
+			System.out.printf("%s is taking off!\n", this.name);
 		}
 		else{
-			System.out.printf("Woah! Hold on, the %s hasn't even started moving!",this.name);
+			System.out.printf("Woah! Hold on, the %s hasn't even started moving!\n",this.name);
 		}
 	}
 	
