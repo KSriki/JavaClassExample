@@ -8,9 +8,9 @@ package cars;
 
 public class Vehicle implements iVehicle{
 
-	private double velocity = 0;
-	private boolean inMotion = false;
-	private String name;
+	protected double velocity = 0;		//speed of vehicle
+	protected boolean inMotion = false;	//is the vehicle in motion
+	protected String name;				//name of the vehicle
 	
 	public Vehicle(){
 		this.name = "Vehicle";
@@ -68,6 +68,10 @@ public class Vehicle implements iVehicle{
 		
 	}
 	
+	/**
+	 * Determines if the Vehicle is moving or not
+	 * @return true or false if the vehicle is moving.
+	 */
 	public boolean isMoving(){
 		return inMotion;
 	}

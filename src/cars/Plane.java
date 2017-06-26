@@ -10,5 +10,17 @@ public class Plane extends Vehicle{
 		super(n);
 	}
 	
+	/**
+	 * Planes can fly. 
+	 */
+	public void fly(){
+		if(this.inMotion){
+			System.out.printf("%s is taking off!", this.name);
+		}
+		else{
+			System.out.printf("Woah! Hold on, the %s hasn't even started moving!",this.name);
+		}
+	}
+	
 
 }
