@@ -36,7 +36,7 @@ public class BookDB {
 			}
 		}
 		
-		return Book.noBooks;
+		return new Book();
 	}
 	
 	/**

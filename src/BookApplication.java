@@ -31,7 +31,8 @@ public class BookApplication {
 		db.addBook(a4);
 		db.addBook(a5);
 		db.addBook(a6);
-		
+
+		a1.getDisplayText();
 		//System.out.println(db.getBook("Python1004"));
 		
 		assertEquals(db.getBook("Java1002"),a2);

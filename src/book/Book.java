@@ -12,13 +12,20 @@ public class Book {
 	private String author;
 	private String desc;
 	private double price;
+	private boolean isInStock;
 	
-	//No books, empty book
-	final static Book noBooks = new Book("", "", "", "", 0);
 	
+	public Book(){
+		this.sku = "";
+		this.title = "";
+		this.author = "";
+		this.desc = "";
+		this.price = 0.0;
+		this.isInStock = false;	
+	}
 	public Book(String s, String t, String a, String d, double p){
-		if(p < 0){
-			System.out.println("ERROR INCORRECT PRICE!");
+		if(p < 0 || s == null || t== null || a == null || d == null ){
+			System.out.println("ERROR INCORRECT BOOK!");
 			System.exit(1);
 		}
 		this.sku = s;
@@ -26,8 +33,12 @@ public class Book {
 		this.author = a;
 		this.desc = d;
 		this.price = p;
+		this.isInStock = true;
 	}
 	
+	public void getDisplayText(){
+		System.out.printf("Title: %s, Author: %s, Description: %s \n",this.title,this.author,this.desc);
+	}
 	public String getSku() {
 		return sku;
 	}
