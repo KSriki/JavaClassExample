@@ -2,6 +2,7 @@ package cars;
 
 public class Car extends Vehicle {
 
+	
 	public Car(){
 		super("Car");
 	}
@@ -10,5 +11,6 @@ public class Car extends Vehicle {
 		super(n);
 	}
 	
+
 	
 }

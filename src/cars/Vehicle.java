@@ -26,7 +26,7 @@ public class Vehicle implements iVehicle{
 		if(!inMotion){
 			inMotion = true;
 			this.accelerate(1);
-			System.out.printf("The %s is in motion.\n",this.name);
+			System.out.printf("The %s is starting.\n",this.name);
 			// TODO Auto-generated method stub
 		
 		}
@@ -44,7 +44,7 @@ public class Vehicle implements iVehicle{
 			this.deaccelerate(this.velocity);
 		}
 		else{
-			System.out.printf("The %s is not moving.\n", this.name);
+			System.out.printf("The %s is stopped.\n", this.name);
 		}
 		// TODO Auto-generated method stub
 		
@@ -92,6 +92,25 @@ public class Vehicle implements iVehicle{
 			System.out.printf("The %s is moving at %.2f.\n", this.name,this.velocity);
 		}
 	}
+
+	public double getVelocity() {
+		return velocity;
+	}
+
+	public void setSpeed(double velocity) {
+		this.velocity = velocity;
+		System.out.printf("The %s Speed is %.2f.\n",this.name,this.velocity);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
 	
 	
 
